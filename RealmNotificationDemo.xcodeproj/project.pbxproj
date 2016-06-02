@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C5AEA076EEFE0D5F5EF3DD /* Pods_RealmNotificationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0B3354551AA0A371D7BE08 /* Pods_RealmNotificationDemo.framework */; };
 		85F062511D007500003524F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F062501D007500003524F3 /* AppDelegate.swift */; };
 		85F062531D007500003524F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F062521D007500003524F3 /* ViewController.swift */; };
 		85F062561D007500003524F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F062541D007500003524F3 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E0B3354551AA0A371D7BE08 /* Pods_RealmNotificationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmNotificationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B289FED1637EA373CD7FA21 /* Pods-RealmNotificationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmNotificationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmNotificationDemo/Pods-RealmNotificationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		85F0624D1D0074FF003524F3 /* RealmNotificationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmNotificationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F062501D007500003524F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85F062521D007500003524F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		85F062571D007500003524F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85F0625A1D007500003524F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85F0625C1D007500003524F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98A9B8027E69E9D254F4FEEF /* Pods-RealmNotificationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmNotificationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmNotificationDemo/Pods-RealmNotificationDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C5AEA076EEFE0D5F5EF3DD /* Pods_RealmNotificationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021B80D9F037E1115D07515D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E0B3354551AA0A371D7BE08 /* Pods_RealmNotificationDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70FBDF60B02FC3AFD536C709 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B289FED1637EA373CD7FA21 /* Pods-RealmNotificationDemo.debug.xcconfig */,
+				98A9B8027E69E9D254F4FEEF /* Pods-RealmNotificationDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		85F062441D0074FF003524F3 = {
 			isa = PBXGroup;
 			children = (
 				85F0624F1D007500003524F3 /* RealmNotificationDemo */,
 				85F0624E1D0074FF003524F3 /* Products */,
+				70FBDF60B02FC3AFD536C709 /* Pods */,
+				021B80D9F037E1115D07515D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85F0625F1D007500003524F3 /* Build configuration list for PBXNativeTarget "RealmNotificationDemo" */;
 			buildPhases = (
+				58B5997FFD85E371B861A266 /* [CP] Check Pods Manifest.lock */,
 				85F062491D0074FF003524F3 /* Sources */,
 				85F0624A1D0074FF003524F3 /* Frameworks */,
 				85F0624B1D0074FF003524F3 /* Resources */,
+				F85A8F642349056DDF303E83 /* [CP] Embed Pods Frameworks */,
+				8432FD5FE9B3F222FBDC119D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58B5997FFD85E371B861A266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8432FD5FE9B3F222FBDC119D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmNotificationDemo/Pods-RealmNotificationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F85A8F642349056DDF303E83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmNotificationDemo/Pods-RealmNotificationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85F062491D0074FF003524F3 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		85F062601D007500003524F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B289FED1637EA373CD7FA21 /* Pods-RealmNotificationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmNotificationDemo/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		85F062611D007500003524F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A9B8027E69E9D254F4FEEF /* Pods-RealmNotificationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmNotificationDemo/Info.plist;
@@ -286,6 +363,7 @@
 				85F062611D007500003524F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
